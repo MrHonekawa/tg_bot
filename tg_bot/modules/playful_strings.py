@@ -39,10 +39,10 @@ VEGE6 = (
      "BitterGuard",
      "Spice",
      "Pea",
-     "Tomato"
-     "Potato"
-     "Spinach"
-     "Capsicum"
+     "Tomato",
+     "Potato",
+     "Spinach",
+     "Capsicum",
      "mould",
      "AppleGourd",
 
