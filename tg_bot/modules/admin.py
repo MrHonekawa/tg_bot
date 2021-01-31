@@ -33,11 +33,11 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
 
     user_member = chat.get_member(user_id)
     if user_member.status == 'administrator' or user_member.status == 'creator':
-        message.reply_text("How am I meant to promote someone that's already an admin?")
+        message.reply_text("How am I meant to upgrade someone that's already an admin?")
         return ""
 
     if user_id == bot.id:
-        message.reply_text("I can't promote myself! Get an admin to do it for me.")
+        message.reply_text("I can't upgrade myself! Get an admin to do it for me.")
         return ""
 
     # set same perms as bot - bot can't assign higher perms than itself!
@@ -53,9 +53,9 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
                           can_pin_messages=bot_member.can_pin_messages,
                           can_promote_members=bot_member.can_promote_members)
 
-    message.reply_text("Successfully promoted! Now Time for Party...")
+    message.reply_text("Successfully upgraded! Now Time for Party...")
     return "<b>{}:</b>" \
-           "\n#PROMOTED" \
+           "\n#UPGRADED" \
            "\n<b>Admin:</b> {}" \
            "\n<b>User:</b> {}".format(html.escape(chat.title),
                                       mention_html(user.id, user.first_name),
@@ -79,15 +79,15 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
 
     user_member = chat.get_member(user_id)
     if user_member.status == 'creator':
-        message.reply_text("This person CREATED the chat, how would I demote them?")
+        message.reply_text("This person CREATED the chat, how would I downgrade them?")
         return ""
 
     if not user_member.status == 'administrator':
-        message.reply_text("Can't demote what wasn't promoted!")
+        message.reply_text("Can't downgrade what wasn't promoted!")
         return ""
 
     if user_id == bot.id:
-        message.reply_text("I can't demote myself! Get an admin to do it for me.")
+        message.reply_text("I can't downgrade myself! Get an admin to do it for me.")
         return ""
 
     try:
@@ -100,16 +100,16 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
                               can_restrict_members=False,
                               can_pin_messages=False,
                               can_promote_members=False)
-        message.reply_text("Successfully demoted! I'm waiting for party you haven't gave me yet...")
+        message.reply_text("Successfully downgraded! I'm waiting for party you haven't gave me yet...")
         return "<b>{}:</b>" \
-               "\n#DEMOTED" \
+               "\n#DOWNGRADED" \
                "\n<b>Admin:</b> {}" \
                "\n<b>User:</b> {}".format(html.escape(chat.title),
                                           mention_html(user.id, user.first_name),
                                           mention_html(user_member.user.id, user_member.user.first_name))
 
     except BadRequest:
-        message.reply_text("Could not demote. I might not be admin, or the admin status was appointed by another "
+        message.reply_text("Could not downgrade. I might not be admin, or the admin status was appointed by another "
                            "user, so I can't act upon them!")
         return ""
 
@@ -140,7 +140,7 @@ def pin(bot: Bot, update: Update, args: List[str]) -> str:
             else:
                 raise
         return "<b>{}:</b>" \
-               "\n#PINNED" \
+               "\n#CLIPPED" \
                "\n<b>Admin:</b> {}".format(html.escape(chat.title), mention_html(user.id, user.first_name))
 
     return ""
@@ -164,7 +164,7 @@ def unpin(bot: Bot, update: Update) -> str:
             raise
 
     return "<b>{}:</b>" \
-           "\n#UNPINNED" \
+           "\n#UNCLIPPED" \
            "\n<b>Admin:</b> {}".format(html.escape(chat.title),
                                        mention_html(user.id, user.first_name))
 
@@ -209,22 +209,22 @@ def __chat_settings__(chat_id, user_id):
 __help__ = """
  - /adminlist: list of admins in the chat
 *Admin only:*
- - /pin: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users.
- - /unpin: unpins the currently pinned message
+ - /clip: silently pins the message replied to - add 'loud' or 'notify' to give notifs to users like /clip <loud/notify>.
+ - /unclip: unpins the currently pinned message
  - /invitelink: gets invitelink
- - /promote: promotes the user replied to
- - /demote: demotes the user replied to
+ - /upgrade: Upgrade/promotes the user replied to with them superpowers...
+ - /downgrade: Downgrade/demotes the user replied to with taking superpowers back...
 """
 
 __mod_name__ = "Admin"
 
-PIN_HANDLER = CommandHandler("pin", pin, pass_args=True, filters=Filters.group)
-UNPIN_HANDLER = CommandHandler("unpin", unpin, filters=Filters.group)
+PIN_HANDLER = CommandHandler("clip", pin, pass_args=True, filters=Filters.group)
+UNPIN_HANDLER = CommandHandler("unclip", unpin, filters=Filters.group)
 
 INVITE_HANDLER = CommandHandler("invitelink", invite, filters=Filters.group)
 
-PROMOTE_HANDLER = CommandHandler("promote", promote, pass_args=True, filters=Filters.group)
-DEMOTE_HANDLER = CommandHandler("demote", demote, pass_args=True, filters=Filters.group)
+PROMOTE_HANDLER = CommandHandler("upgrade", promote, pass_args=True, filters=Filters.group)
+DEMOTE_HANDLER = CommandHandler("downgrade", demote, pass_args=True, filters=Filters.group)
 
 ADMINLIST_HANDLER = DisableAbleCommandHandler("adminlist", adminlist, filters=Filters.group)
 
