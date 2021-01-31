@@ -60,6 +60,10 @@ To get hint type /hint_color4
 -- /color6 : play colour game with 6 friends only.... not more then that!
 To get hint type /hint_color6
 
-
+- FRUITS
+-- /fruits3 : play fruits guessing game with 3 friends only.... not more then that!
+To get hint type /hint_fruits3
+-- /fruits6 : play fruits guessing game with 6 friends only.... not more then that!
+To get hint type /hint_fruits6
 """
 __mod_name__ = "GAMES"
