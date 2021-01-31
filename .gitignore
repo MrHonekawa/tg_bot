@@ -1,4 +1,5 @@
 tg_bot/config.py
+tg_bot/config.ini
 *.pyc
 .idea/
 .project
