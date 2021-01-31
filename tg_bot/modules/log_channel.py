@@ -126,7 +126,7 @@ if is_module_loaded(FILENAME):
 
 
     def __stats__():
-        return "•Total {} log channels set.".format(sql.num_logchannels())
+        return "• {} log channels set.".format(sql.num_logchannels())
 
 
     def __migrate__(old_chat_id, new_chat_id):
