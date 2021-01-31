@@ -17,8 +17,8 @@ def vege6(update: Update, context: CallbackContext):
   update.effective_message.reply_text(random.choice(vege.HINT_VEGE6))
 
 
-VEGE3_HANDLER = DisableAbleCommandHandler("vege3", vege3)
-VEGE6_HANDLER = DisableAbleCommandHandler("vege6", vege6)
+VEGE3_HANDLER = DisableAbleCommandHandler("hint_vege3", vege3)
+VEGE6_HANDLER = DisableAbleCommandHandler("hint_vege6", vege6)
 
 dispatcher.add_handler(VEGE3_HANDLER)
 dispatcher.add_handler(VEGE6_HANDLER)
