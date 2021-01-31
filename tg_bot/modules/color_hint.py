@@ -4,4 +4,4 @@ HINT_COLOR4 = (
 
 HINT_COLOR6 = (
            "Color Guessing games played between 6 players. Guess color by getting hint -- 1) Blue, 2) Black, 3) Golden, 4) Silver, 5) Indigo, 6) Orange, 7) Brown, 8) Red, 9) Green, 10) Yellow, 11) Peach, 12) Purple"
-  
+)
