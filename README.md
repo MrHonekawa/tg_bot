@@ -19,3 +19,11 @@
 [Support Group](https://t.me/DragonAssociationSupport) & [Updates Channel](https://t.me/DragonUpdates)
 
 [Server Chat](https://discord.gg/crGUAnmSFD)
+
+# Credits
+
+Bot Maded Via Our Devs - [Joseph](https://t.me/Joseph_Frank) & [Edwin McCoy](https://t.me/mccoyeddy).
+
+Meet My Bot Owner - [Bot Owner](https://t.me/I_Am_An_PRINCES)!
+
+thanks for now! 
