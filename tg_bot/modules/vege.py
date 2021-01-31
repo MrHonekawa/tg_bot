@@ -1,6 +1,6 @@
 import html
 import random
-import tg_bot.modules.vege as vege
+import tg_bot.modules.vege_hint as vege_hint
 from tg_bot import dispatcher
 from telegram import ParseMode, Update, Bot
 from tg_bot.modules.disable import DisableAbleCommandHandler
