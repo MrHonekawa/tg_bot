@@ -9,3 +9,12 @@
 </p>
 
 [Join Discord](https://discord.gg/crGUAnmSFD)
+*[BatMan](https://t.me/BatMan_Robot) is a python3 robot running on own database!*
+
+# Support
+ 
+[BatMan Bot](https://t.me/Batman_Robot) is a bot that is maded via gaining idea from *Group Managing Bots in TG Platform* & coded by *My Devs*
+
+[Support Group](https://t.me/DragonAssociationSupport) & [Updates Channel](https://t.me/DragonUpdates)
+
+[Server Chat](https://discord.gg/crGUAnmSFD)
