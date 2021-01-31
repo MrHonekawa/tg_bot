@@ -7,6 +7,7 @@ COLOR4 = (
      "Voilet",
      "Pink",
      "Purple"
+)
 
 COLOR6 = (
       "Blue"
@@ -31,6 +32,8 @@ VEGE3 = (
      "BootleGaurd",
      "Spice"
      "Pea"
+
+)
 
 VEGE6 = (
      "Brinjal"
