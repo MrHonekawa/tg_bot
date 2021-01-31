@@ -20,7 +20,19 @@ def dice12(update: Update, context: CallbackContext):
 def dice18(update: Update, context: CallbackContext):
   args = context.args
   update.effective_message.reply_text(random.choice(dice_string.DICE18)
-                                      
+
+@run_async
+def dice4(update: Update, context: CallbackContext):
+  args = context.args
+  update.effective_message.reply_text(random.choice(dice_string.DICE4)
+
+@run_async
+def dice2(update: Update, context: CallbackContext):
+  args = context.args
+  update.effective_message.reply_text(random.choice(dice_string.DICE2)
+
 DICE6_HANDLER = DisableAbleCommandHandler("dice6", dice6)
 DICE12_HANDLER = DisableAbleCommandHandler("dice12", dice12)
 DICE18_HANDLER = DisableAbleCommandHandler("dice18", dice18)
+DICE4_HANDLER = DisableAbleCommandHandler("dice4", dice4)
+DICE2_HANDLER = DisableAbleCommandHandler("dice2", dice2)
