@@ -35,3 +35,14 @@ thanks for now!
 
 We Support `Fork` too! But we can solve your problem only 2 times, so be careful!
 *If you ask more then 2 times we will ignore very less times! If our Members got irritated then cause `BAN`*
+
+# Deploy
+```
+We are telling what is the main info to be collected to deploy bot!
+Step 1 - Get Ready with owner id
+Step 2 - Get Ready with a SUDO_USERS ID (Might be your friends)
+Step 3 - Gain group id via @showjsonbot
+Step 4 - Have a donation Link of any payment method i.e, PayPal, Skill & ETC
+Final step go and deploy it via button given below;
+NOTE - Any Changes in Readme File cause you more harm. Bcs Readme Content is important that our devs can carry on for your req!
+```
