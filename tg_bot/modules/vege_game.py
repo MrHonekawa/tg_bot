@@ -11,3 +11,8 @@ def vege3(update: Update, context: CallbackContext):
   args = context.args
   update.effective_message.reply_text(random.choice(playful_string.VEGE3))
   
+@run_async
+def vege6(update: Update, context: CallbackContext):
+  args = context.args
+  update.effective_message.reply_text(random.choice(playful_string.VEGE6))
+
