@@ -49,5 +49,13 @@ List of GAMES-
 -- /dice18 : rolls the dice with measuring 1-18 numbers as main.
 -----------------------x-------------------x---------------------
 - VEGETABLES
+-- /vege3 : play vegetables game with 3 friends only.... not more then that! 
+To get hint type /hint_vege3
+-- /vege6 : play vegetables game with 6 friends only not more then that!
+To get hint type /hint_vege6
+------------------------x-------------------x---------------------
+- COLOUR 
+-- /color
+
 """
 __mod_name__ = "GAMES"
