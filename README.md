@@ -27,3 +27,8 @@ Bot Maded Via Our Devs - [Joseph](https://t.me/Joseph_Frank) & [Edwin McCoy](htt
 Meet My Bot Owner - [Bot Owner](https://t.me/I_Am_An_PRINCES)!
 
 thanks for now! 
+
+## NOTE :D
+
+We Support `Fork` too! But we can solve your problem only 2 times, so be careful!
+*If you ask more then 2 times we will ignore very less times! If our Members got irritated then cause `BAN`*
