@@ -36,3 +36,18 @@ DICE12_HANDLER = DisableAbleCommandHandler("dice12", dice12)
 DICE18_HANDLER = DisableAbleCommandHandler("dice18", dice18)
 DICE4_HANDLER = DisableAbleCommandHandler("dice4", dice4)
 DICE2_HANDLER = DisableAbleCommandHandler("dice2", dice2)
+
+__help__ = """
+Hello, welcome to Games Section.
+You can play aswme games anytime...
+List of GAMES-
+- DICE
+-- /dice2 : rolls the dice with measuring 1-2 numbers as main.
+-- /dice4 : rolls the dice with measuring 1-4 numbers as main.
+-- /dice6 : rolls the dice with measuring 1-6 numbers as main.
+-- /dice12 : rolls the dice with measuring 1-12 numbers as main.
+-- /dice18 : rolls the dice with measuring 1-18 numbers as main.
+-----------------------x-------------------x---------------------
+- VEGETABLES
+"""
+__mod_name__ = "GAMES"
