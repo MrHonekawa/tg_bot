@@ -13,3 +13,5 @@ def vege3(update: Update, context: CallbackContext):
 
 
 VEGE3_HANDLER = DisableAbleCommandHandler("vege3", vege3)
+
+dispatcher.add_handler(VEGE3_HANDLER)
