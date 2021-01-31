@@ -9,6 +9,7 @@
 </p>
 
 [Join Discord](https://discord.gg/crGUAnmSFD)
+
 *[BatMan](https://t.me/BatMan_Robot) is a python3 robot running on own database!*
 
 # Support
