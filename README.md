@@ -8,11 +8,11 @@
 <a href="https://makeapullrequest.com" alt="PRs Welcome"> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" /> </a>
 <a href="https://github.com/MrHonekawa/tg_bot" alt="GitHub repo size"> <img src="https://img.shields.io/github/repo-size/MrHonekawa/tg_bot" /> </a>
 </p>
-![Repo Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/MrHonekawa/BatmanRobot/&title=Repo%20Views)
 
 [Join Discord](https://discord.gg/crGUAnmSFD)
 
 *[BatMan](https://t.me/BatMan_Robot) is a python3 robot running on own database!*
+![Repo Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/MrHonekawa/BatmanRobot/&title=Repo%20Views)
 
 # Support
  
