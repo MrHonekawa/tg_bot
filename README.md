@@ -13,7 +13,7 @@
 
 *[BatMan](https://t.me/BatMan_Robot) is a python3 robot running on own database!*
 
-![Repo Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/MrHonekawa/BatmanRobot/&title=Repo%20Views)
+![Repo Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/MrHonekawa/tg_bot/&title=Repo%20Views)
 
 # Support
  
