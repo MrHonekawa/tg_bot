@@ -9,12 +9,12 @@ from telegram.ext import CallbackContext, run_async
 @run_async
 def vege3(update: Update, context: CallbackContext):
   args = context.args
-  update.effective_message.reply_text(random.choice(vege.VEGE3))
+  update.effective_message.reply_text(random.choice(vege.HINT_VEGE3))
   
 @run_async
 def vege6(update: Update, context: CallbackContext):
   args = context.args
-  update.effective_message.reply_text(random.choice(vege.VEGE6))
+  update.effective_message.reply_text(random.choice(vege.HINT_VEGE6))
 
 
 VEGE3_HANDLER = DisableAbleCommandHandler("vege3", vege3)
