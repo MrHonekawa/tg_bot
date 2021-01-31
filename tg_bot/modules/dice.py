@@ -9,27 +9,27 @@ from telegram.ext import CallbackContext, run_async
 @run_async
 def dice6(update: Update, context: CallbackContext):
   args = context.args
-  update.effective_message.reply_text(random.choice(dice_string.DICE6)
+  update.effective_message.reply_text(random.choice(dice_string.DICE6))
 
 @run_async
 def dice12(update: Update, context: CallbackContext):
   args = context.args
-  update.effective_message.reply_text(random.choice(dice_string.DICE12)
+  update.effective_message.reply_text(random.choice(dice_string.DICE12))
                                       
 @run_async
 def dice18(update: Update, context: CallbackContext):
   args = context.args
-  update.effective_message.reply_text(random.choice(dice_string.DICE18)
+  update.effective_message.reply_text(random.choice(dice_string.DICE18))
 
 @run_async
 def dice4(update: Update, context: CallbackContext):
   args = context.args
-  update.effective_message.reply_text(random.choice(dice_string.DICE4)
+  update.effective_message.reply_text(random.choice(dice_string.DICE4))
 
 @run_async
 def dice2(update: Update, context: CallbackContext):
   args = context.args
-  update.effective_message.reply_text(random.choice(dice_string.DICE2)
+  update.effective_message.reply_text(random.choice(dice_string.DICE2))
 
 DICE6_HANDLER = DisableAbleCommandHandler("dice6", dice6)
 DICE12_HANDLER = DisableAbleCommandHandler("dice12", dice12)
