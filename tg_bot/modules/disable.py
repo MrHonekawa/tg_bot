@@ -1,4 +1,4 @@
-from typing import Uninon, List, Optional
+from typing import Union, List, Optional
 
 from future.utils import string_types
 from typing import Union, List, Optional
