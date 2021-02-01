@@ -1,6 +1,6 @@
 import html
 import random
-import tg_bot.modules.playful_string as playful_string
+import tg_bot.modules.playful_strings as playful_strings
 from tg_bot import dispatcher
 from telegram import ParseMode, Update, Bot
 from tg_bot.modules.disable import DisableAbleCommandHandler
@@ -9,12 +9,12 @@ from telegram.ext import CallbackContext, run_async
 @run_async
 def vege3(update: Update, context: CallbackContext):
   args = context.args
-  update.effective_message.reply_text(random.choice(playful_string.VEGE3))
+  update.effective_message.reply_text(random.choice(playful_strings.VEGE3))
   
 @run_async
 def vege6(update: Update, context: CallbackContext):
   args = context.args
-  update.effective_message.reply_text(random.choice(playful_string.VEGE6))
+  update.effective_message.reply_text(random.choice(playful_strings.VEGE6))
 
 VEGE3_HANDLER = DisableAbleCommandHandler("vege3", vege3)
 VEGE6_HANDLER = DisableAbleCommandHandler("vege6", vege6)
