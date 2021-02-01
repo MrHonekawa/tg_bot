@@ -1,7 +1,7 @@
 import speedtest
 from tg_bot import SUDO_USERS, dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
-from tg_bot.modules.helper_funcs.chat_status import sudo_plus
+from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
