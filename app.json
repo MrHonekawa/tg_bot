@@ -1,6 +1,6 @@
 
 {
-  "name": "Marie-2.0 English",
+  "name": "TG_BOT",
   "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
   "keywords": [
     "telegram",
@@ -9,7 +9,7 @@
     "manager",
     "3"
   ],
-  "repository": "hhttps://github.com/TGExplore/Marie-2.0-English",
+  "repository": "hhttps://github.com/MrHonekawa/tg_bot",
   "env": {
       "ALLOW_EXCL": {
          "description": "Set this to True if you want ! to be a command prefix along with /",
