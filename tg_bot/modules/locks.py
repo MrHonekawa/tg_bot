@@ -286,11 +286,11 @@ def __chat_settings__(chat_id, user_id):
 
 
 __help__ = """
- - /locktypes: a list of possible locktypes
+ - /sealtypes: a list of possible locktypes
 *Admin only:*
- - /lock <type>: lock items of a certain type (not available in private)
- - /unlock <type>: unlock items of a certain type (not available in private)
- - /locks: the current list of locks in this chat.
+ - /seal <type>: lock items of a certain type (not available in private)
+ - /unseal <type>: unlock items of a certain type (not available in private)
+ - /list_seal: the current list of locks in this chat.
 Locks can be used to restrict a group's users.
 eg:
 Locking urls will auto-delete all messages with urls, locking stickers will delete all \
@@ -300,10 +300,10 @@ Locking bots will stop non-admins from adding bots to the chat.
 
 __mod_name__ = "Locks"
 
-LOCKTYPES_HANDLER = DisableAbleCommandHandler("locktypes", locktypes)
-LOCK_HANDLER = CommandHandler("lock", lock, pass_args=True, filters=Filters.group)
-UNLOCK_HANDLER = CommandHandler("unlock", unlock, pass_args=True, filters=Filters.group)
-LOCKED_HANDLER = CommandHandler("locks", list_locks, filters=Filters.group)
+LOCKTYPES_HANDLER = DisableAbleCommandHandler("sealtypes", locktypes)
+LOCK_HANDLER = CommandHandler("seal", lock, pass_args=True, filters=Filters.group)
+UNLOCK_HANDLER = CommandHandler("unseal", unlock, pass_args=True, filters=Filters.group)
+LOCKED_HANDLER = CommandHandler("list_seal", list_locks, filters=Filters.group)
 
 dispatcher.add_handler(LOCK_HANDLER)
 dispatcher.add_handler(UNLOCK_HANDLER)
