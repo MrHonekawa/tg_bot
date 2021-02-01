@@ -1,4 +1,5 @@
 # Batman
+![Stars](https://img.shields.io/github/stars/MrHonekawa/tg_bot?style=for-the-badge&logo=appveyor)
 
 <p align="center">
 <a href="https://ko-fi.com/mccoyeddy" alt="Donate!"> <img src="https://aleen42.github.io/badges/src/paypal.svg" /> </a>
