@@ -76,3 +76,11 @@ FRUITS6 = (
        "Papaya"
        
 )
+
+ANIMAL2 = (
+       "Tiger"
+       "Elephant",
+       "Bear",
+       "Monckey",
+
+)
