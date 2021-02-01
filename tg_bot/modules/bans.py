@@ -291,7 +291,7 @@ __mod_name__ = "FORBID"
 
 BAN_HANDLER = CommandHandler("forbid", ban, pass_args=True, filters=Filters.group)
 TEMPBAN_HANDLER = CommandHandler(["tforbid", "tempforbid"], temp_ban, pass_args=True, filters=Filters.group)
-KICK_HANDLER = CommandHandler("bite", bite, pass_args=True, filters=Filters.group)
+KICK_HANDLER = CommandHandler("bite", kick, pass_args=True, filters=Filters.group)
 UNBAN_HANDLER = CommandHandler("unforbid", unban, pass_args=True, filters=Filters.group)
 KICKME_HANDLER = DisableAbleCommandHandler("biteme", kickme, filters=Filters.group)
 
