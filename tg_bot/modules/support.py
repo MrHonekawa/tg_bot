@@ -8,3 +8,5 @@ from telegram.ext import CallbackContext, run_async
 
 @run_async
 def support_group(update: Update, context: CallbackContext):
+  args = context.args
+  update.effective_message.reply_text(random.choice.SUPPORT)
