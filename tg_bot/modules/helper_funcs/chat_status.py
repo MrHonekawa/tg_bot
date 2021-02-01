@@ -166,7 +166,7 @@ def sudo_plus(func):
             pass
         elif DEL_CMDS and " " not in update.effective_message.text:
             update.effective_message.delete()
-        else 
+        else:
         update.effective_message.reply_text(
             "This is a developer restricted command. You Don't have perms to run this cmd."
             " You do not have permissions to run this.")
