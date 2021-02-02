@@ -66,3 +66,15 @@ __help__ = """
 - /color6 : Color Guessing game played between 6 players.
 - /hint_color6 for hint. (Hint Allowed)
 """
+
+__mod_name__ = "Color Game"
+
+COLOR4_HANDLER = DisableAbleCommandHandler("color4", color4)
+COLOR6_HANDLER = DisableAbleCommandHandler("color6", color6)
+HINT_COLOR4_HANDLER = DisableAbleCommandHandler("hint_color4", hint_color4)
+HINT_COLOR6_HANDLER = DisableAbleCommandHandler("hint_color6", hint_color6)
+
+dispatcher.add_handler(COLOR4_HANDLER)
+dispatcher.add_handler(COLOR6_HANDLER)
+dispatcher.add_handler(HINT_COLOR4_HANDLER)
+dispatcher.add_handler(HINT_COLOR6_HANDLER)
