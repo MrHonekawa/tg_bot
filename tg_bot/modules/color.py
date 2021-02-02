@@ -61,5 +61,8 @@ def hint_color6(bot: Bot, update: Update):
      update.message.reply_text(random.choice(HINT_COLOR6))
 
 __help__ = """
-- /color4 : Color Guessing game played between 4 players. Type /hint_color4 for hint. (Hint Allowed)
+- /color4 : Color Guessing game played between 4 players.
+- /hint_color4 for hint. (Hint Allowed)
+- /color6 : Color Guessing game played between 6 players.
+- /hint_color6 for hint. (Hint Allowed)
 """
