@@ -20,7 +20,7 @@ def support_group(bot: Bot, update: Update):
   update.effective_message.reply_text(random.choice(SUPPORT))
 
 @run_async
-def update_channel(bot: Bot, update; Update):
+def update_channel(bot: Bot, update: Update):
   update.effective_message.reply_text(random.choice(UPDATE))
 
 SUPPORT_GROUP_HANDLER = DisableAbleCommandHandler("support_group", support_group)
