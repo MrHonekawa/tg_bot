@@ -40,29 +40,8 @@ async def translate(_, message: Message) -> None:
 @pg.on_message(filters.command("langs"))
 async def languages(_, message: Message) -> None:
     await message.reply_text(
-        "Languages Supported with lang code are given below.
-        Afrikaans - af
-        Albanian  - sq
-        Amharic   - am
-        Arabic    - ar
-        Armenian  - hy
-        Azerbaijani - az
-        Basque    - eu
-        Belarusian- be
-        Bengali   - bn
-        Bosnian   - bs
-        Bulgarian - bg
-        Catalan   - ca
-        Cebuano   - ceb
-        Chinese (Simplified) - zh
-        Chinese (Traditional)- zh-TW
-        Corsican  - co
-        Croatian  - hr
-        Czech     - cs
-        Danish    - da
-        Dutch     - nl
-        Get Full List on @DragonAssociationSupport"
-    )
+        "Languages Supported with lang code are given below, Afrikaans - af, Albanian  - sq, Amharic   - am, Arabic    - ar, Armenian  - hy,  Azerbaijani - az, Basque    - eu, Belarusian- be, Bengali   - bn, Bosnian   - bs, Bulgarian - bg, Catalan   - ca, Cebuano   - ceb, Chinese (Simplified) - zh, Chinese (Traditional)- zh-TW, Corsican  - co, Croatian  - hr, Czech     - cs, Danish    - da, Dutch     - nl, Get Full List on @DragonAssociationSupport"
+)
 
 
 __mod_name__ = "Translation"
