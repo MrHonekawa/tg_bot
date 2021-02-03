@@ -35,6 +35,8 @@ def server(bot: Bot, update: Update):
 
 SUPPORT_GROUP_HANDLER = DisableAbleCommandHandler("support_group", support_group)
 UPDATE_CHANNEL_HANDLER = DisableAbleCommandHandler("update_channel", update_channel)
+SERVER_HANDLER = DisableAbleCommandHandler("server", server)
 
 dispatcher.add_handler(SUPPORT_GROUP_HANDLER)
 dispatcher.add_handler(UPDATE_CHANNEL_HANDLER)
+dispatcher.add_handler(SERVER_HANDLER)
