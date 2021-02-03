@@ -8,11 +8,13 @@ from tg_bot import dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 
 SUPPORT = (
-       "Hello, Thanks for opting me up, This is my support group - @DragonAssociationSupport"
+       "Hello, Thanks for opting me up, This is my support group - @DragonAssociationSupport",
+       "Hello, Thanks for opting me up, This is my support group - @DragonAssociationSupport",
 )
 
 UPDATE = (
-      "Hello, Thanks for choosing us, This is my Update Channels @DragonUpdates & @TGBOTLAB"
+      "Hello, Thanks for choosing us, This is my Update Channels @DragonUpdates & @TGBOTLAB",
+      "Hello, Thanks for choosing us, This is my Update Channels @DragonUpdates & @TGBOTLAB",
 )
 
 @run_async
