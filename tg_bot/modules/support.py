@@ -17,6 +17,10 @@ UPDATE = (
       "Hello, Thanks for choosing us, This is my Update Channels @DragonUpdates & @TGBOTLAB",
 )
 
+SERVER = (
+      "Hello, We holds a private server known as Dragonite Server have support here is a link to pvt server - https://discord.gg/crGUAnmSFD",
+      "Hello, We holds a private server known as Dragonite Server have support here is a link to pvt server - https://discord.gg/crGUAnmSFD",
+
 @run_async
 def support_group(bot: Bot, update: Update):
   update.effective_message.reply_text(random.choice(SUPPORT))
@@ -24,6 +28,10 @@ def support_group(bot: Bot, update: Update):
 @run_async
 def update_channel(bot: Bot, update: Update):
   update.effective_message.reply_text(random.choice(UPDATE))
+
+@run_async
+def server(bot: Bot, update: Update):
+  update.effective_message.reply_text(random.choice(SERVER))
 
 SUPPORT_GROUP_HANDLER = DisableAbleCommandHandler("support_group", support_group)
 UPDATE_CHANNEL_HANDLER = DisableAbleCommandHandler("update_channel", update_channel)
