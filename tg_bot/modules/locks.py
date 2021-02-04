@@ -298,7 +298,7 @@ stickers, etc.
 Locking bots will stop non-admins from adding bots to the chat.
 """
 
-__mod_name__ = "Locks"
+__mod_name__ = "Seal"
 
 LOCKTYPES_HANDLER = DisableAbleCommandHandler("sealtypes", locktypes)
 LOCK_HANDLER = CommandHandler("seal", lock, pass_args=True, filters=Filters.group)
