@@ -1,3 +1,7 @@
+# Estella (A Telegram bot project)
+# Copyright (C) Dragon Association & Estella Team
+# Code not done yet.
+
 import json
 from pprint import pprint
 
@@ -15,3 +19,5 @@ URL = "http://services.gingersoftware.com/Ginger/correct/json/GingerTheText"
 def grammer(bot: Bot, update: Update):
   if update.effective_message.reply_to_message:
     msg = update.effective_message.reply_to_message
+
+# Still Left to code.
