@@ -1,6 +1,7 @@
 # Estella (A Telegram bot project)
 # Copyright (C) Dragon Association & Estella Team
 # Bot Running under Python3
+# Yet to code.
 
 import html
 from io import BytesIO
