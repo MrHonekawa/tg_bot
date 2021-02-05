@@ -60,4 +60,23 @@ def gmute(bot: Bot, update: Update, args: List[str]):
         message.reply_text("This user is already gmuted; I'd change the reason, but you haven't given me one...")
         return
       
-      sucess = sql.update_gmute_reason(
+      sucess = sql.update_gmute_reason(user_id, user_chat.username or user_chat.first_name, reason)
+      if sucess:
+            message.reply_text("This user is already gmuted; I've gone and updated the gmute reason tough!")
+      else:
+          message.reply_text("Huh, do you mind trying that again? I thought this person was gmuted, but she/he wasn't? "
+                             "I am very confused")
+            
+      return
+
+message.reply_text("Getting the ducts ready oppose your gmute in @DragonAssociationSupport")
+
+muter = update.effective_user
+send_to_list(bot, SUDO_USERS + SUPPORT_USERS,
+             "{} is gmuting user {} "
+             "because:\n{}".format(mention_html(muter.id, muter.first_name),
+                                   mention_html(user_chat.id, user_chat.first_name), reason or "No Reason Given"),
+             html=True)
+
+sql.gmute_user(user_id, user_chat.username or user_chat.first_name, reason)
+
