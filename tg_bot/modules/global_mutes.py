@@ -64,12 +64,12 @@ def gmute(bot: Bot, update: Update, args: List[str]):
         if success:
             message.reply_text("This user is already gmuted; I've gone and updated the gmute reason though!")
         else:
-            message.reply_text("Do you mind trying again? I thought this person was gmuted, but then they weren't? "
+            message.reply_text("Huh? Do you mind trying again? I thought this person was gmuted, but then they weren't? "
                                "Am very confused")
 
         return
 
-    message.reply_text("*Gets duct tape ready* 😉")
+    message.reply_text("Getting the duts ready. *muting user*")
 
     muter = update.effective_user  # type: Optional[User]
     send_to_list(bot, SUDO_USERS + SUPPORT_USERS,
@@ -99,7 +99,7 @@ def gmute(bot: Bot, update: Update, args: List[str]):
                 pass
             elif excp.message == "User_not_participant":
                 pass
-            elif excp.message == "Peer_id_invalid":  # Suspect this happens when a group is suspended by telegram.
+            elif excp.message == "Peer_id_invalid":
                 pass
             elif excp.message == "Group chat was deactivated":
                 pass
@@ -267,7 +267,7 @@ def gmutestat(bot: Bot, update: Update, args: List[str]):
 
 
 def __stats__():
-    return "{} gmuted users.".format(sql.num_gmuted_users())
+    return "• {} gmuted users.".format(sql.num_gmuted_users())
 
 
 def __user_info__(user_id):
