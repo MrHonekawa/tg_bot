@@ -1,4 +1,4 @@
-# Batman
+# Estella
 ![Stars](https://img.shields.io/github/stars/MrHonekawa/tg_bot?style=for-the-badge&logo=appveyor)
 ![Python Version](https://img.shields.io/badge/python-3.6.12-green?style=for-the-badge&logo=appveyor)
 ![Issues](https://img.shields.io/github/issues/MrHonekawa/tg_bot?style=for-the-badge&logo=appveyor)
@@ -17,13 +17,13 @@
 
 [Join Discord](https://discord.gg/crGUAnmSFD)
 
-*[BatMan](https://t.me/BatMan_Robot) is a python3 robot running on own database!*
+*[Estella](https://t.me/EstellaRobot) is a python3 robot running on own database!*
 
 ![Repo Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/MrHonekawa/tg_bot/&title=Repo%20Views)
 
 # Support
  
-[BatMan Bot](https://t.me/Batman_Robot) is a bot that is maded via gaining idea from *Group Managing Bots in TG Platform* & coded by *My Devs*
+[Estella Bot](https://t.me/EstellaRobot) is a bot that is maded via gaining idea from *Group Managing Bots in TG Platform* & coded by *My Devs*
 
 [Support Group](https://t.me/DragonAssociationSupport) & [Updates Channel](https://t.me/DragonUpdates)
 
