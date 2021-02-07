@@ -59,4 +59,62 @@ def check_message(bot: Bot, message):
     
     
 @run_async
-def chatbot(### Yet to code from here ###
+def chatbot(bot: Bot, update: Update):
+  global api_client
+  msg = update.effective_message
+  chat_id = update.effective_chat.id
+  is_chat = sql.is_chat(chat_id)
+  if not is chat:
+    return
+  if msg.text and not msg.document:
+    if not check_message(bot, msg):
+      return
+    sesh, exp = sql.get_ses(chat_id)
+    query = msg.text
+    try:
+      if int(exp) < time():
+        ses = api_client.create_session()
+        ses_id = str(ses.id)
+        expires = str(ses.expires)
+        sql.set_ses(chat_id, ses_id, expires)
+        sesh, exp = sql.get_ses(chat_id)
+    except ValueError:
+      pass
+    try:
+      bot.send_chat_action(chat_id, action='typing')
+      rep = api_client.think_thought(sesh, query)
+      sleep(0.6)
+      msg.reply_text(rep, timeout=60)
+    except CFError as e:
+      bot.send_message(OWNER_ID, f"Chatbot Error: {e} occurred in {chat_id}!")
+      
+      
+@run_async
+def list_chatbot_chats(bot: Bot, update: Update):
+    chats = sql.get_all_chats()
+    text = "<b>ESTELLA AI-Enabled Chats</b>\n"
+    for chat in chats:
+        try:
+            x = bot.get_chat(int(*chat))
+            name = x.title if x.title else x.first_name
+            text += f"• <code>{name}</code>\n"
+        except BadRequest:
+            sql.rem_chat(*chat)
+        except Unauthorized:
+            sql.rem_chat(*chat)
+        except RetryAfter as e:
+            sleep(e.retry_after)
+    update.effective_message.reply_text(text, parse_mode="HTML")
+
+STARTCHATBOT_HANDLER = CommandHandler("enable_ai", startchatbot, filters=CustomFilters.sudo_fiter)
+STOPCHATBOT_HANDLER = CommandHandler ("disable_ai", stopchatbot, filters=CustomFilters.sudo_filter)
+CHATBOT_HANDLER = MessageHandler(Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
+                                  & ~Filters.regex(r"^s\/")), chatbot)
+LIST_CHATBOT_CHATS_HANDLER = CommandHandler("ai_chats", list_chatbot_chats, filters=CustomFilters.sudo_filter)
+
+dispatcher.add_handler(STARTCHATBOT_HANDLER)
+dispatcher.add_handler(STOPCHATBOT_HANDLER)
+dispatcher.add_handler(CHATBOT_HANDLER)
+dispatcher.add_handler(LIST_CHATBOT_CHATS_HANDLER)
+
+# Code Completed
