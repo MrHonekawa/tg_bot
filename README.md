@@ -1,4 +1,15 @@
 # Estella
+[Estella](https://t.me/EstellaRobot) is a telegram python bot running on python with an with an sqlalchemy database.
+Originally a simple group managment bot with multiple admin features. It has involved and becoming extremely modular and simple to use.
+
+Can be found on Telegram as [Estella](https://t.me/EstellaRobot)
+
+Estella and We are moderating a [support group](https://t.me/DragonAssociationSupport), where you can ask for help setting up Estella.
+Discover/Request new features. Report bugs, and stay in the loop whenever a new update is available.
+Ofcourse i'll also help when a database schema changes, and some table and column needs to be added.
+
+Join the [Updates Channel](https://t.me/DragonUpdates) if you just want to stay in loop about the features and announcements in future.
+
 ![Stars](https://img.shields.io/github/stars/MrHonekawa/tg_bot?style=for-the-badge&logo=appveyor)
 ![Python Version](https://img.shields.io/badge/python-3.6.12-green?style=for-the-badge&logo=appveyor)
 ![Issues](https://img.shields.io/github/issues/MrHonekawa/tg_bot?style=for-the-badge&logo=appveyor)
