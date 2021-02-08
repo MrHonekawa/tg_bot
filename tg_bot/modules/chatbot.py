@@ -105,6 +105,17 @@ def list_chatbot_chats(bot: Bot, update: Update):
         except RetryAfter as e:
             sleep(e.retry_after)
     update.effective_message.reply_text(text, parse_mode="HTML")
+    
+def __stats__():
+  return "• Total Chats Enabled AI : {}".format(sql.num_chats())
+
+__help__ = """
+Here is help for CHATBOT MODULE
+Go to @DragonAssociationSupport and ask them to enable chatbot in your group.
+We also have chatbot enabled group where you can know how this works. @EstellaAI
+"""
+
+__mod_name__ = "CHATBOT"
 
 STARTCHATBOT_HANDLER = CommandHandler("enable_ai", startchatbot, filters=CustomFilters.sudo_fiter)
 STOPCHATBOT_HANDLER = CommandHandler ("disable_ai", stopchatbot, filters=CustomFilters.sudo_filter)
