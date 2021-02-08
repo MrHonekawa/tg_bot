@@ -51,7 +51,7 @@ def hint_car2(bot: Bot, update: Update):
 def hint_car3(bot: Bot, update: Update):
   update.message.reply_text(random.choice(HINT_CAR3))
 
-__help__ """
+__help__ = """
 Here is CAR GAME MODULE :-
 - /car2 : Car Name Guessing game played between 2 players.
 - /hint(_)car2 : Get hint on playing game (Remove Brackets in CMD)
