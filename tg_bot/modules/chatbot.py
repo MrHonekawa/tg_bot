@@ -6,7 +6,7 @@ from time import time, sleep
 
 from coffeehouse.lydia import LydiaAI
 from coffeehouse.api import API
-from coffehouse.exception import CoffeeHouseError as CFError
+from coffeehouse.exception import CoffeeHouseError as CFError
 
 from telegram import Message, Chat, User, Update, Bot
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
