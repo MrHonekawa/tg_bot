@@ -77,6 +77,11 @@
          "required": false,
          "value": ""
       },
+      "AI_API_KEY": {
+         "description": "Setting this to ANYTHING will enable webhooks.",
+         "required": false,
+         "value": ""
+      },    
       "WHITELIST_USERS": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "value": ""
