@@ -18,9 +18,9 @@ class Config(object):
     URL = "https://estella-robots.herokuapp.com/"
 
     # OPTIONAL
-    SUDO_USERS = '1399308798, 1229419906, 1358136299'  # List of id's (not usernames) for users which have sudo access to the bot.
+    SUDO_USERS = '1399308798 1229419906 1358136299'  # List of id's (not usernames) for users which have sudo access to the bot.
     SUPPORT_USERS = '784606914'  # List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    WHITELIST_USERS = '1399308798, 1229419906, 1358136299, 784606914'  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
+    WHITELIST_USERS = '1399308798 1229419906 1358136299 784606914'  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     DONATION_LINK = "https://t.me/I_AM_AN_PRINCES"  # EG, paypal
     CERT_PATH = None
     PORT = 5432
