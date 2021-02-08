@@ -1,3 +1,8 @@
+# Estella (A Telegram bot project)
+# Copyright (C) Dragon Association & Estella Team
+# Copyright (C) 2021
+# Thanks to JosephFrank for this game module.
+
 import random, re
 from random import randint
 from telegram import Message, Update, Bot, User
