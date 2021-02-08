@@ -99,6 +99,7 @@ else:
     BAN_STICKER = Config.BAN_STICKER
     ALLOW_EXCL = Config.ALLOW_EXCL
     AI_API_KEY = Config.AI_API_KEY
+    ENV = Config.ENV
 
 
 SUDO_USERS.add(OWNER_ID)
