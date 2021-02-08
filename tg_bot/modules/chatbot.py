@@ -64,7 +64,7 @@ def chatbot(bot: Bot, update: Update):
   msg = update.effective_message
   chat_id = update.effective_chat.id
   is_chat = sql.is_chat(chat_id)
-  if not is chat:
+  if not is_chat:
     return
   if msg.text and not msg.document:
     if not check_message(bot, msg):
