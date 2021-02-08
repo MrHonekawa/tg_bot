@@ -3,7 +3,7 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
-    API_KEY = ""
+    API_KEY = "1362939750:AAGWAKfbkzzDQFlmQgPAAF5NXp4oglJgSuQ"
     OWNER_ID = "YOUR ID HERE"  # If you dont know, run the bot and do /id in your private chat with it
     OWNER_USERNAME = "I_AM_AN_PRINCES"
 
@@ -29,6 +29,7 @@ class Config(object):
     WORKERS = 8  # Number of subthreads to use. This is the recommended amount - see for yourself what works best!
     BAN_STICKER = ''  # banhammer marie sticker
     ALLOW_EXCL = True  # Allow ! commands as well as /
+    AI_API_KEY = 
 
 class Production(Config):
     LOGGER = False
