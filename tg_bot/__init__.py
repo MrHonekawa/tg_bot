@@ -98,6 +98,7 @@ else:
     WORKERS = Config.WORKERS
     BAN_STICKER = Config.BAN_STICKER
     ALLOW_EXCL = Config.ALLOW_EXCL
+    AI_API_KEY = Config.AI_API_KEY
 
 
 SUDO_USERS.add(OWNER_ID)
