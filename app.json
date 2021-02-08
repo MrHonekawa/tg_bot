@@ -29,6 +29,10 @@
          "required": false,
          "value": "https://t.me/mccoyeddy"
       },
+      "DATABASE_URL": {
+      "description": "Database Url",
+      "value": ""
+      },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables.",
          "value": "ANYTHING"
