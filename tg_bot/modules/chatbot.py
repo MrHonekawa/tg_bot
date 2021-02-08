@@ -46,7 +46,7 @@ def stopchatbot(bot: Bot, update: Update):
     msg.reply_text("Estella AI chatbot is disabled in this group")
  
 
-@run_asyc
+@run_async
 def check_message(bot: Bot, message):
   reply_msg = message.reply_to_message
   if message.text.lower() == "estella":
