@@ -1,3 +1,7 @@
+# Estella (A Telegram bot project)
+# Copyright (C) Dragon Association & Estella Team
+# Copyright (C) 2021
+
 import threading
 from sqlalchemy import Column, String, UnicodeText
 from tg_bot.modules.sql import SESSION, BASE
