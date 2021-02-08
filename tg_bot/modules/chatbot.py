@@ -16,7 +16,7 @@ from tg_bot import dispatcher, API_KEY, OWNER_ID
 import tg_bot.modules.sql.chatbot_sql as sql
 from tg_bot.modules.helper_funcs.filters import CustomFilters
 
-CoffeHouseAPI = API(API_KEY)
+CoffeHouseAPI = API(AI_API_KEY)
 api_client = LydiaAI(CoffeHouseAPI)
 
 @run_async
