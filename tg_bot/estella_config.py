@@ -3,6 +3,7 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
+    API_KEY = ""
     OWNER_ID = "YOUR ID HERE"  # If you dont know, run the bot and do /id in your private chat with it
     OWNER_USERNAME = "YOUR USERNAME HERE"
 
