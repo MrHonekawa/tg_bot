@@ -117,7 +117,7 @@ We also have chatbot enabled group where you can know how this works. @EstellaAI
 
 __mod_name__ = "CHATBOT"
 
-STARTCHATBOT_HANDLER = CommandHandler("enable_ai", startchatbot, filters=CustomFilters.sudo_fiter)
+STARTCHATBOT_HANDLER = CommandHandler("enable_ai", startchatbot, filters=CustomFilters.sudo_filter)
 STOPCHATBOT_HANDLER = CommandHandler ("disable_ai", stopchatbot, filters=CustomFilters.sudo_filter)
 CHATBOT_HANDLER = MessageHandler(Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
                                   & ~Filters.regex(r"^s\/")), chatbot)
