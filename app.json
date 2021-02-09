@@ -29,10 +29,6 @@
          "required": false,
          "value": "https://t.me/mccoyeddy"
       },
-      "DATABASE_URL": {
-      "description": "Database Url",
-      "value": ""
-      },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables.",
          "value": "ANYTHING"
@@ -54,7 +50,7 @@
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
          "value": "True"
       },
-      "STRICT_GBAN": {
+      "STRICT_GMUTE": {
          "description": "Enforce gmute across new groups as well as old groups. When a gmute user talks, he will be muted.",
          "value": "True"
       },
