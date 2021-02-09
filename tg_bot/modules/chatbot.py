@@ -107,7 +107,7 @@ def list_chatbot_chats(bot: Bot, update: Update):
     update.effective_message.reply_text(text, parse_mode="HTML")
     
 def __stats__():
-  return "• Total Chats Enabled AI : {}".format(sql.get_all_chat())
+  return "• Total Chats Enabled AI : {}".format(sql.get_all_chats())
 
 __help__ = """
 Here is help for CHATBOT MODULE
