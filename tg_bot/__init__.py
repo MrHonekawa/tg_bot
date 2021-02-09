@@ -58,6 +58,7 @@ if ENV:
     BAN_STICKER = os.environ.get('BAN_STICKER', 'CAADAgADOwADPPEcAXkko5EB3YGYAg')
     ALLOW_EXCL = os.environ.get('ALLOW_EXCL', False)
     AI_API_KEY = os.environ.get('AI_API_KEY', None)
+    STRICT_GMUTE = os.environ.get('STRICT_GMUTE', True)
 
 else:
     from tg_bot.config import Development as Config
@@ -101,6 +102,7 @@ else:
     ALLOW_EXCL = Config.ALLOW_EXCL
     AI_API_KEY = Config.AI_API_KEY
     ENV = Config.ENV
+    STRICT_GMUTE = Config.STRICT_GMUTE
 
 
 SUDO_USERS.add(OWNER_ID)
