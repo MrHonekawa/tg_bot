@@ -2,6 +2,8 @@
 # Copyright (C) Dragon Association & Estella Team
 # Copyright (C) 2021
 
+import threading
+
 from sqlalchemy import Column, UnicodeText, Integer, String, Boolean
 
 from tg_bot.modules.sql import BASE, SESSION
