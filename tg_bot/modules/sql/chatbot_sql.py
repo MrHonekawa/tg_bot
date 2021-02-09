@@ -76,3 +76,9 @@ def get_all_chats():
         return SESSION.query(ChatbotChats.chat_id).all()
     finally:
         SESSION.close()
+
+def get_enabled_chats():
+    try:
+        return SESSION.query(ChatbotChats).all()
+    finally:
+        SESSION.close()
