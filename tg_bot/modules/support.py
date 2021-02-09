@@ -20,6 +20,7 @@ UPDATE = (
 SERVER = (
       "Hello, We holds a private server known as Dragonite Server have support here is a link to pvt server - https://discord.gg/crGUAnmSFD",
       "Hello, We holds a private server known as Dragonite Server have support here is a link to pvt server - https://discord.gg/crGUAnmSFD",
+)
 
 @run_async
 def support_group(bot: Bot, update: Update):
