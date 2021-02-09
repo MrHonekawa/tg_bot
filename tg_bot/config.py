@@ -31,6 +31,7 @@ class Config(object):
     ALLOW_EXCL = True  # Allow ! commands as well as /
     AI_API_KEY = "3ca02d5dc8795c9073825f2bb1fc02d415c19e44bec07d3fe5e48471185acab3bd44f04dd791ad605b4cbe85394e0a8fad16032d7710ad27de1c41149baeee42"
     ENV = "ANYTHING"
+    STRICT_GMUTE = True
 
 class Production(Config):
     LOGGER = False
