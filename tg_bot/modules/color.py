@@ -35,7 +35,8 @@ COLOR6 = (
 )
 
 HINT_COLOR4 = (
-           "Color Guessing games played between 4 players. Guess color by getting hint -- 1) Red, 2) White, 3) Green, 4) Yellow, 5) Peach, 6) Voilet, 7) Pink, 8) Purple"
+           "Color Guessing games played between 4 players. Guess color by getting hint -- 1) Red, 2) White, 3) Green, 4) Yellow, 5) Peach, 6) Voilet, 7) Pink, 8) Purple",
+          "Color Guessing games played between 4 players. Guess color by getting hint -- 1) Red, 2) White, 3) Green, 4) Yellow, 5) Peach, 6) Voilet, 7) Pink, 8) Purple"
 
 )
 
