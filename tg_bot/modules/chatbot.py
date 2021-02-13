@@ -38,7 +38,7 @@ def startchatbot(bot: Bot, update: Update):
 def stopchatbot(bot: Bot, update: Update):
   msg = update.effective_message
   chat_id = update.effective_chat.id
-  is_chat = sql.is_char(chat_id)
+  is_chat = sql.is_chat(chat_id)
   if not is_chat:
     msg.reply_text("Estella AI chatbot is not enabled in this group")
   else:
