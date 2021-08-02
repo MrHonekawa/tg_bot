@@ -26,7 +26,7 @@ Join the [Updates Channel](https://t.me/DragonUpdates) if you just want to stay 
 <a href="https://github.com/MrHonekawa/tg_bot" alt="GitHub repo size"> <img src="https://img.shields.io/github/repo-size/MrHonekawa/tg_bot" /> </a>
 </p>
 
-[Join Discord](https://discord.gg/crGUAnmSFD)
+
 
 *[Estella](https://t.me/EstellaRobot) is a python3 robot running on own database!*
 
@@ -38,11 +38,11 @@ Join the [Updates Channel](https://t.me/DragonUpdates) if you just want to stay 
 
 [Support Group](https://t.me/DragonAssociationSupport) & [Updates Channel](https://t.me/DragonUpdates)
 
-[Server Chat](https://discord.gg/crGUAnmSFD)
+
 
 # Credits
 
-Bot Maded Via Our Devs - [Joseph](https://t.me/Joseph_Frank) & [Edwin McCoy](https://t.me/mccoyeddy).
+Bot Maded Via Our Devs - SOME ANONYMOUS TEAM MEMBERS TOO!
 
 Meet My Bot Owner - [Bot Owner](https://t.me/I_Am_An_PRINCES)!
 
@@ -66,5 +66,13 @@ NOTE - Any Changes in Readme File cause you more harm. Bcs Readme Content is imp
 Tap on the button Below to Deploy your own bot
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrHonekawa/tg_bot)
+
+##other:
+We have a cousin sister of estella working at discord, 
+But not with with same features as inserted at telegram bot!
+
+COUSIN NAME: [BOTTIE]
+SERVER LINK: COMING UP SOON!
+
 # DragonAssociation (2021)
 Code Licensed under GPLv-3.0
