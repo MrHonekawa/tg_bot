@@ -45,10 +45,10 @@ def hint_fruits6(bot: Bot, update: Update):
     update.message.reply_text(random.choice(HINT_FRUITS6))
 
 __help__ = """
-- /fruits3 : Guessing Fruits Game played along 3 players.
-- /hint_fruits3 : Get hint for playing game
-- /fruits6 : Guessing Fruits Game played along 6 players.
-- /hint_fruits6 : Get hint for playing game.
+- `/fruits3` : Guessing Fruits Game played along 3 players.
+- `/hint_fruits3` : Get hint for playing game
+- `/fruits6` : Guessing Fruits Game played along 6 players.
+- `/hint_fruits6` : Get hint for playing game.
 """
 
 __mod_name__ = "Fruits Game"
