@@ -67,7 +67,7 @@ Tap on the button Below to Deploy your own bot
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrHonekawa/tg_bot)
 
-##other:
+## Other:
 We have a cousin sister of estella working at discord, 
 But not with with same features as inserted at telegram bot!
 
