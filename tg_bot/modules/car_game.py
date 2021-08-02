@@ -53,10 +53,10 @@ def hint_car3(bot: Bot, update: Update):
 
 __help__ = """
 Here is CAR GAME MODULE :-
-- /car2 : Car Name Guessing game played between 2 players.
-- /hint(_)car2 : Get hint on playing game (Remove Brackets in CMD)
-- /car3 : Car Name Guessing game played between 3 players.
-- /hint(_)car3 : Get hint on playing game (Remove Brackets in CMD)
+- `/car2` : Car Name Guessing game played between 2 players.
+- `/hint_car2` : Get hint on playing game (Remove Brackets in CMD)
+- `/car3` : Car Name Guessing game played between 3 players.
+- `/hint_car3` : Get hint on playing game (Remove Brackets in CMD)
 """
 
 __mod_name__ = "CAR GAME"
